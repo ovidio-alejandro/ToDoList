@@ -3,17 +3,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ToDo-List</h1>
-        <div>
-            <input type="text">
-            <input type="checkbox">
-        </div>
-        <div class="list-container">
+    <div class="container">
+        <h1>📝 ToDo List</h1>
 
-        </div>
+        <!-- Input para la nueva tarea-->
+        <div class="input-section">
+            <input 
+                type="text"
+                id="taskInput"
+                placeholder="Escribe tu tarea aqui..."
+                >
+            <button id="addBtn">+</button>
+        </div> 
+
+        <!--Lista de tareas-->
+        <ul id="taskList">
+            <!--Aqui se agregaran las tareas dinamicamente-->
+        </ul>
+    </div>
     
-    
+    <script src="app.js"></script>
 </body>
 </html>
